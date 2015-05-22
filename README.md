@@ -1,6 +1,6 @@
 #Laravel 5 State Seeder
 
-*Usage*
+**Usage**
 
 ```bash
 $ php artisan make:model State
