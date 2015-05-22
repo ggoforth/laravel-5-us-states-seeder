@@ -6,7 +6,7 @@
 $ php artisan make:model State
 ```
 
-This will generate the model and migration for your database.  Then simply drop the `StatesSeeder.php` into your `seeds` folder.  Back at the command line run:
+This will generate the model and migration for your database.  In your migration you need to include `string` fields for `code` and `name`.  Then simply drop the `StatesSeeder.php` into your `seeds` folder.  Back at the command line run:
 
 ```bash
 $ php artisan migrate
