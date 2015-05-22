@@ -3,6 +3,7 @@
 
 use App\State;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 
 class StatesSeeder extends Seeder {
@@ -14,6 +15,9 @@ class StatesSeeder extends Seeder {
      */
     public function run()
     {
+
+        DB::table('states')->truncate();
+
         State::create(['name' => 'Alaska', 'code' => 'AK']);
         State::create(['name' => 'Alabama', 'code' => 'AL']);
         State::create(['name' => 'American Samoa', 'code' => 'AS']);
