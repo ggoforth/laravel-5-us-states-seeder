@@ -1,11 +1,13 @@
 <?php
 
+namespace Database\Seeders;
+
 use App\State;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class StatesSeeder extends Seeder {
-
+class StatesSeeder extends Seeder
+{
     /**
      * Run the database seeds.
      *
@@ -13,7 +15,6 @@ class StatesSeeder extends Seeder {
      */
     public function run()
     {
-
         DB::table('states')->truncate();
 
         State::create(['name' => 'Alaska', 'code' => 'AK']);
@@ -82,5 +83,4 @@ class StatesSeeder extends Seeder {
         State::create(['name' => 'Armed Forces Middle East', 'code' => 'AE']);
         State::create(['name' => 'Armed Forces Pacific', 'code' => 'AP']);
     }
-
 }
